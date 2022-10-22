@@ -11,16 +11,23 @@ while novo_jogo == 's'
   
   tentativas = 1
 
+when seu_numero <= 100
   while pc_numero != seu_numero
     if pc_numero > seu_numero
       puts "O numero é maior que #{seu_numero}"
     else
       puts "O numero é menor que #{seu_numero}"
     end
+    
+  if puts "Opção inválida, digite apenas numeros de 1 a 100"
+
+
     tentativas += 1
 
     puts 'Tente novamente: '
     seu_numero = gets.to_i
+
+
   end
 
   puts "Parabéns o numero era #{pc_numero}"
